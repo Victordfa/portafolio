@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    background-color: #000;
 }
 *, ::after, ::before {
     margin: 0px;
@@ -10,7 +11,7 @@ html {
     -moz-box-sizing: border-box;
 }
 .top {
-    background-image: url("../images/neon-sunset.jpg");
+    background-image: url(../images/neon_plants.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
@@ -23,25 +24,48 @@ html {
     transform: rotate(-90deg);
     font-size: 10px;
 }
-p {
+div p {
     font-family: 'Questrial', sans-serif;
     color: #fff;
 }
-
 h1 {
-    font-family: 'Lobster Two', cursive;
-    font-weight: 700;
-    color: #fff;
-    font-size: 150px;
-    margin: -34rem 58px 10px;
-}
+      font-size: 150px;
+      font-family: 'Lobster Two', cursive;
+      color: #fff;
+      font-weight: 400;
+      margin: -34rem 58px 10px;
+      animation: neon .08s ease-in-out infinite alternate;
+    }
 h2 {
-    font-family: 'Lobster Two', cursive;
-    font-weight: 700;
-    color: #fff;
     font-size: 169px;
-    margin: -6rem 58px 10px;
+      font-family: 'Lobster Two', cursive;
+      color: #fff;
+      font-weight: 400;
+      margin: -5rem 58px 10px;
+      animation: neon .08s ease-in-out infinite alternate;
 }
+/*Animation neon*/
+@keyframes neon {
+    from {
+      text-shadow:
+      0 0 4px rgba(202,228,225,0.92),
+      0 0 20px rgba(202,228,225,0.34),
+      0 0 10px rgba(30,132,242,0.52),
+      0 0 11px rgba(30,132,242,0.92),
+      0 0 24px rgba(30,132,242,0.78),
+      0 0 44px rgba(30,132,242,0.92);
+    }
+    to {
+      text-shadow:
+      0 0 4px rgba(202,228,225,0.98),
+      0 0 20px rgba(202,228,225,0.42),
+      0 0 12px rgba(30,132,242,0.58),
+      0 0 11px rgba(30,132,242,0.84),
+      0 0 24px rgba(30,132,242,0.88),
+      0 0 44px rgba(30,132,242,1);
+    }
+  }
+
 .box-description {
     width: 265px;
     font-family: 'Questrial', sans-serif;
@@ -51,7 +75,7 @@ h2 {
     margin: 0rem 90px 0px;
 }
 .More-button {
-    background-color: #D02C4C;
+    background-color: #527BFF;
     border: none;
     color: #fff;
     padding: 14px 11px;
@@ -65,5 +89,33 @@ h2 {
 }
 .More-button:hover {
     background-color: #A22C40;
+}
+nav {
+    position: sticky;
+    top: 50px;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 77px 89px;
+    font-size: 17px;
+    font-family: 'Questrial', sans-serif;
+}
+section p {
+    color: #fff;
+    text-align: center;
+    font-size: 33px;
+    font-family: 'Questrial', sans-serif;
+    margin: 8rem 19rem 5rem;
 }
 
