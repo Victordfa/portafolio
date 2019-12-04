@@ -44,7 +44,7 @@ h2 {
       margin: -5rem 58px 10px;
       animation: neon .08s ease-in-out infinite alternate;
 }
-/*Animation neon*/
+/*-----------Animation neon-----------*/
 @keyframes neon {
     from {
       text-shadow:
@@ -90,9 +90,6 @@ h2 {
 .More-button:hover {
     background-color: #A22C40;
 }
-nav {
-    top: 50px;
-}
 nav ul {
     list-style: none;
     text-align: center;
@@ -106,9 +103,11 @@ nav a {
     text-decoration: none;
     color: #fff;
     display: block;
-    padding: 77px 89px;
+    padding: 44px 116px;
     font-size: 17px;
     font-family: 'Questrial', sans-serif;
+    margin-top: 59px;
+    cursor: pointer;
 }
 section p {
     color: #fff;
@@ -117,11 +116,14 @@ section p {
     font-family: 'Amaranth', sans-serif;
     margin: 8rem 19rem 5rem;
 }
+/*--------------Galeria------------*/
+
 .gallery-section h3 {
     font-family: 'Oxygen', sans-serif;
-    font-weight: 300;
     color: #fff;
     text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
 }
 .gallery-section {
     width: 100%;
@@ -134,7 +136,7 @@ section p {
     padding: 0 20px;
 }
 .border{
-    width: 180px;
+    width: 270px;
     height: 4px;
     background: #fff;
     margin: 60px auto;
@@ -146,6 +148,7 @@ section p {
 }
 
 .gallery-section .image {
+    flex: 25%;
     overflow: hidden;
     cursor: pointer;
 }
@@ -161,12 +164,12 @@ section p {
 }
 @media screen and (max-width:960px){
     .gallery-section .image{
-        flex: 100%;
+        flex: 33.33%;
     }
 }
 @media screen and (max-width:768px){
     .gallery-section .image{
-        flex: 100%;
+        flex: 50%;
     }
 }
 @media screen and (max-width:480px){
