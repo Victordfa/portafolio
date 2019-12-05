@@ -1,0 +1,128 @@
+html {
+    box-sizing: border-box;
+    background-color: #000;
+}
+*, ::after, ::before {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: inherit;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.botones {
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 40px;
+    font-size: 17px;
+    font-family: 'Questrial', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+/*-----------TITTLE 2D----------------*/
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 78px 0px 118px 0px;
+}
+.title h1 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 7rem;
+    color: #fff;
+}
+/*---------VIDEO GALLERY------------*/
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      letter-spacing: 1px;
+      margin: 2px;
+      margin-top: 18px;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+  }
+  /* 
+  This is the starting grid for each video with thumbnails 4 across for the largest screen size.
+  It's important to use percentages or there may be gaps on the right side of the page. 
+  */
+  
+  .video {
+    padding-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    width: 23%; /* Thumbnails 4 across */
+    margin: 1%;
+    float: left;
+    border: 2px solid #0070B9;
+  }
+  
+  /* 
+  These styles keep the height of each video thumbnail consistent between YouTube and Vimeo. 
+  Each can have thumbnail sizes that vary by 1px and are likely break your layout. 
+  */
+  
+  .video figure {
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+  }
+  
+  .video figure a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 0;
+  }
+  
+  /* Media Queries - This is the responsive grid. */
+  
+  @media (max-width: 1024px) {
+    .video {
+      width: 31.333%; /* Thumbnails 3 across */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .video {
+      width: 48%; /* Thumbnails 2 across */
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .video {
+      display: block;
+      width: 96%; /* Single column view. */
+      margin: 2%; /* The smaller the screen, the smaller the percentage actually is. */
+      float: none;
+    }
+  }
+  
+  /* These are my preferred rollover styles. */
+  
+  .video img {
+    width: 100%;
+    opacity: 1;
+  }
+  
+  .video img:hover, .video img:active, .video img:focus {
+    opacity: 0.75;
+  }

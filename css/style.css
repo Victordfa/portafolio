@@ -22,7 +22,7 @@ html {
     top: -85rem;
     left: -45rem;
     transform: rotate(-90deg);
-    font-size: 10px;
+    font-size: 20px;
 }
 div p {
     font-family: 'Questrial', sans-serif;
@@ -90,6 +90,11 @@ h2 {
 .More-button:hover {
     background-color: #A22C40;
 }
+/*-------MENU-------*/
+.botones {
+    display: flex;
+    justify-content: center;
+}
 nav ul {
     list-style: none;
     text-align: center;
@@ -102,13 +107,15 @@ nav li {
 nav a {
     text-decoration: none;
     color: #fff;
-    display: block;
-    padding: 44px 116px;
+    display: inline-block;
+    padding: 44px 100px;
     font-size: 17px;
     font-family: 'Questrial', sans-serif;
     margin-top: 59px;
     cursor: pointer;
+    text-transform: uppercase;
 }
+/*--------------QUOTE------------*/
 section p {
     color: #fff;
     text-align: center;
