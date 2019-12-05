@@ -1,0 +1,151 @@
+html {
+    box-sizing: border-box;
+    background-color: #000;
+}
+*, ::after, ::before {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: inherit;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.header {
+    background-image: url(../images/neon_plants.jpg);
+    background-size: cover;
+    height: 7rem;
+    color:#ffffff;
+    box-sizing: border-box;
+    top: -100px;
+    -webkit-transition: top 0.3s;
+    transition: top 0.3s;
+    }
+.botones {
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 40px;
+    font-size: 13px;
+    font-family: 'Questrial', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.box-color {
+    width: 30rem;
+    height: 40rem;
+    background-color: rgb(253, 22, 99);
+    z-index: -1;
+    position: fixed;
+}
+.about {
+    width: 100%;
+    overflow: hidden;
+    margin: 119px 10px 0px 0px;
+    background-image: url(../images/perfil.png);
+    background-position-x: -13rem;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    padding: 55rem 0px 0px 0px;
+}
+.biografia {
+    margin: -51rem 0px 0px 80px;
+}
+.victor {
+    font-family: 'Cabin', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 11px;
+    margin: 60px 0px 0px 53rem;
+}
+.flores {
+    font-family: 'Cabin', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 11px;
+    margin: 0px 0px 0px 53rem;
+}
+.bord {
+    width: 2000px;
+    height: 5px;
+    background-color: #fff;
+    margin: 45px 0px 0px 53rem;
+}
+.info {
+    width: 434px;
+    color: #fff;
+    font-size: 15px;
+    text-align: justify;
+    font-family: 'Questrial', sans-serif;
+    margin: 120px 0px 0px 53rem;
+    line-height: 1.8em;
+}
+.info2 {
+    width: 434px;
+    color: #fff;
+    font-size: 15px;
+    text-align: justify;
+    font-family: 'Questrial', sans-serif;
+    margin: 50px 0px 0px 53rem;
+    line-height: 1.8em;  
+}
+.bord2 {
+    width: 398px;
+    height: 5px;
+    border-bottom: 1px solid #aaaaac;
+    margin:55px 0px 0px 58rem;
+}
+/*-----------REDES SOCIALES-------------------*/
+.contactame {
+    color: #aaaaac;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    margin: 10px 0px 0px 58rem;
+}
+.social-icons {
+    transform: translate(-53%, -50%);
+    height: auto;
+    margin: 53px 0px 0px 70rem;
+}
+.social-icons li {
+    list-style: none;
+    margin: 60px 30px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px 2px;
+}
+/*------------CV----------*/
+.bord3 {
+    width: 398px;
+    height: 5px;
+    border-bottom: 1px solid #aaaaac;
+    margin: -136px 0px 0px 58rem;
+}
+.descarga-cv {
+    background-color: #527BFF;
+    border: none;
+    color: #fff;
+    padding: 15px 54px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;;
+    font-size: 17px;
+    margin: 25px 0px 25px 62rem;
+    cursor: pointer;
+    border-radius: 28px;
+    text-transform: uppercase;
+}
+.descarga-cv:hover {
+    background-color: #A22C40;
+}
