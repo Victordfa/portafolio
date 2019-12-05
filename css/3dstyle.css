@@ -68,7 +68,7 @@ img {
     width: 23%; /* Thumbnails 4 across */
     margin: 1%;
     float: left;
-    border: 2px solid #0070B9;
+    border: 2px solid #FF1C3C;
   }
 
   .video figure {
@@ -115,4 +115,3 @@ img {
   .video img:hover, .video img:active, .video img:focus {
     opacity: 0.75;
   }
-
