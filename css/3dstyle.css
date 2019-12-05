@@ -14,25 +14,58 @@ html {
     display: flex;
     justify-content: center;
 }
-nav ul {
-    list-style: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-nav li {
-    display: inline-block;
-}
-nav a {
-    text-decoration: none;
-    color: #fff;
-    display: inline-block;
-    padding: 40px;
-    font-size: 17px;
-    font-family: 'Questrial', sans-serif;
-    cursor: pointer;
-    text-transform: uppercase;
-}
+.header {
+  background-image: url(../images/neon_plants.jpg);
+  background-size: cover;
+  height: 20rem;
+  color:#ffffff;
+  box-sizing: border-box;
+  top: -100px;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  }
+  .botones {
+      display: flex;
+      justify-content: center;
+  }
+  /*--------------BOTONES GLOW-------------------*/
+  .btn {
+    color: rgba(255,255,255,1);
+    background-color: rgba(0, 0, 0, 0.192);
+    border-radius: 0;
+    padding: 1.2em 5em;
+    letter-spacing: 0.35em;
+    font-size: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    margin: 6em;
+  } 
+  .red {
+      box-shadow: inset 0 0 1em rgba(255, 97, 97, 0.986), 0 0 1em rgba(255, 97, 97, 0.986);
+      border: rgb(255, 74, 74) solid 2px;
+  }
+  .red:hover {
+      background-color: #FF1C3C;
+      box-shadow: inset 0 0 0 rgb(214, 17, 17), 0 0 1.5em rgba(214, 17, 17);
+  }
+  nav ul {
+      list-style: none;
+      text-align: center;
+      margin-top: 72px;
+      padding: 0;
+  }
+  nav li {
+      display: inline-block;
+  }
+  nav a {
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+      padding: 40px;
+      font-size: 17px;
+      font-family: 'Questrial', sans-serif;
+      cursor: pointer;
+      text-transform: uppercase;
+  }
 /*-----------TITTLE 2D----------------*/
 .title {
     display: flex;
