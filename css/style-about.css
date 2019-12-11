@@ -175,3 +175,69 @@ nav a:hover{
         width: 100%;
     }
 }
+#box-mensaje {
+    background-color: #ffff;
+    width: 558px;
+    height: 538px;
+    padding: 50px;
+    margin: 20px;
+    top: 35rem;
+    left: 55rem;
+    margin: 10px auto;
+}
+
+#box-mensaje h2 {
+    font-size: 32px;
+    font-weight: normal;
+    font-family: 'Cabin', sans-serif;
+    color: #000;
+    text-align: center;
+}
+#fname {
+    width: 180px;
+    position: relative;
+    top: 70px;
+    border: 1px solid #aaaaac;
+}
+#lname {
+    width: 180px;
+    position: relative;
+    top: 70px;
+    left: 57px;
+    border: 1px solid #aaaaac;
+}
+#phnumber {
+    width: 180px;
+    position: relative;
+    top: 125px;
+    border: 1px solid #aaaaac;
+}
+#email {
+    width: 180px;
+    position: relative;
+    top: 125px;
+    left: 57px;
+    border: 1px solid #aaaaac;
+}
+#mensaje {
+    width: 420px;
+    height: 137px;
+    position: relative;
+    top: 170px;
+    border: 1px solid #aaaaac;
+}
+#submit {
+    width: 140px;
+    height: 40px;
+    background-color: #D9001B;
+    color: #ffff;
+    position: relative;
+    top: 200px;
+    left: 280px;
+    border: none;
+    border-radius: 29px;
+    font-size: 13px;
+}
+#submit:hover {
+    background-color: #A70014;
+}
